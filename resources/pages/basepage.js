@@ -5,7 +5,7 @@ const { By } = require('selenium-webdriver');
 class BasePage {
     constructor(driver) {
         this.driver = driver
-        console.log(" BasePage constructor")
+        //console.log(" BasePage constructor")
         this.driver.manage().setTimeouts({ implicit: (10000) });
     }
 

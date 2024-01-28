@@ -73,10 +73,6 @@ class Helper {
      */
     async findElementById(locator) {
 
-        if (!this.world.isBrowser) {
-            throw new Error('Tests are not running on a web browser, no web elements to wait for');
-        }
-
 
         if (process.env.CUCUMBER_DEBUG) console.log('findElementById: ' + locator);
 
@@ -101,10 +97,10 @@ class Helper {
      *      helper.refresh();
      */
     async refresh() {
-        if (this.world.debug) console.log('refresh');
+        if (process.env.CUCUMBER_DEBUG) console.log('refresh');
 
         await this.world.driver.navigate().refresh();
-        await this.world.sleep(2000);
+        await this.world.driver.sleep(2000);
     }
 }
 

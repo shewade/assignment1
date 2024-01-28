@@ -13,7 +13,6 @@ class World {
      * @param {Command} parameters - sets the parameters as command
      */
     constructor({ attach, parameters }) {
-        console.log(" world constructor called....")
         this.attach = attach; // attaching screenshots to report
         this.parameters = parameters;
         // you can pass this from env variables and then set it

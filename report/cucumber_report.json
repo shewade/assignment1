@@ -1,0 +1,1027 @@
+[
+  {
+    "description": "    Test google search results for validity",
+    "elements": [
+      {
+        "description": "",
+        "id": "test-validity-of-search-results-on-google;visit-google-search-page",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Visit google search page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 386376
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "browser is up",
+            "match": {
+              "location": "test/steps/testGoogle.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 245711
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I visit google site",
+            "match": {
+              "location": "test/steps/testGoogle.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4641684951
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Title should be Google",
+            "match": {
+              "location": "test/steps/testGoogle.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8196055
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 106326561
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-validity-of-search-results-on-google;test-google-search-results",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "Test google search results",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 257353
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "browser is up",
+            "match": {
+              "location": "test/steps/testGoogle.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113018
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I visit google site",
+            "match": {
+              "location": "test/steps/testGoogle.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4986561658
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I search with \"Friday\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19162425
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see result with \"Friday\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10706708925
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 104811021
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-validity-of-search-results-on-google;test-google-search-results",
+        "keyword": "Scenario Outline",
+        "line": 20,
+        "name": "Test google search results",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 129623
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "browser is up",
+            "match": {
+              "location": "test/steps/testGoogle.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121596
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I visit google site",
+            "match": {
+              "location": "test/steps/testGoogle.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4734484830
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I search with \"123\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20929378
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see result with \"123\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13872468900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 164428773
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-validity-of-search-results-on-google;test-google-search-results",
+        "keyword": "Scenario Outline",
+        "line": 21,
+        "name": "Test google search results",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 231135
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "browser is up",
+            "match": {
+              "location": "test/steps/testGoogle.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 114380
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I visit google site",
+            "match": {
+              "location": "test/steps/testGoogle.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9174600168
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I search with \"any Text\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25883453
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see result with \"any Text\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9977423034
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 110534333
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-validity-of-search-results-on-google;test-google-search-results",
+        "keyword": "Scenario Outline",
+        "line": 23,
+        "name": "Test google search results",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 246815
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "browser is up",
+            "match": {
+              "location": "test/steps/testGoogle.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82289
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I visit google site",
+            "match": {
+              "location": "test/steps/testGoogle.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6450564589
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I search with \"sony\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13479517
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see result with \"sony\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15542911746
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 54840310
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-validity-of-search-results-on-google;test-google-search-results",
+        "keyword": "Scenario Outline",
+        "line": 24,
+        "name": "Test google search results",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 87238
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "browser is up",
+            "match": {
+              "location": "test/steps/testGoogle.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73118
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I visit google site",
+            "match": {
+              "location": "test/steps/testGoogle.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4013374715
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I search with \"Sony\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18639250
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see result with \"Sony\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13900806034
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 118738314
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-validity-of-search-results-on-google;test-google-search-results",
+        "keyword": "Scenario Outline",
+        "line": 25,
+        "name": "Test google search results",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 82930
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "browser is up",
+            "match": {
+              "location": "test/steps/testGoogle.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78286
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I visit google site",
+            "match": {
+              "location": "test/steps/testGoogle.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5126010082
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I search with \"SONY\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16549494
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see result with \"SONY\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11857554478
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 203119765
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-validity-of-search-results-on-google;test-google-search-results",
+        "keyword": "Scenario Outline",
+        "line": 27,
+        "name": "Test google search results",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 87018
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "browser is up",
+            "match": {
+              "location": "test/steps/testGoogle.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 519063
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I visit google site",
+            "match": {
+              "location": "test/steps/testGoogle.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7101143101
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I search with \"Toyota Corolla\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14197448
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see result with \"Toyota Corolla\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11243419000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 154082943
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-validity-of-search-results-on-google;test-google-search-results",
+        "keyword": "Scenario Outline",
+        "line": 28,
+        "name": "Test google search results",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 181309
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "browser is up",
+            "match": {
+              "location": "test/steps/testGoogle.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 370189
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I visit google site",
+            "match": {
+              "location": "test/steps/testGoogle.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5893224697
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I search with \"Samsung Galaxy s24\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14566386
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see result with \"Samsung Galaxy s24\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15381699741
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 104850749
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-validity-of-search-results-on-google;test-google-search-results",
+        "keyword": "Scenario Outline",
+        "line": 31,
+        "name": "Test google search results",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 83620
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "browser is up",
+            "match": {
+              "location": "test/steps/testGoogle.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78886
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I visit google site",
+            "match": {
+              "location": "test/steps/testGoogle.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7787739833
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I search with \"under $1000\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16036231
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see result with \"under $1000\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17469600664
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 109293411
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-validity-of-search-results-on-google;test-google-search-results",
+        "keyword": "Scenario Outline",
+        "line": 34,
+        "name": "Test google search results",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 91507
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "browser is up",
+            "match": {
+              "location": "test/steps/testGoogle.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78914
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I visit google site",
+            "match": {
+              "location": "test/steps/testGoogle.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8747861505
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I search with \"@#$%\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16903178
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see result with \"@#$%\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15827414719
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 57221905
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-validity-of-search-results-on-google;test-google-search-results",
+        "keyword": "Scenario Outline",
+        "line": 35,
+        "name": "Test google search results",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 93963
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "browser is up",
+            "match": {
+              "location": "test/steps/testGoogle.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1188544
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I visit google site",
+            "match": {
+              "location": "test/steps/testGoogle.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8221623541
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I search with \"“@#$%”\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16939005
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see result with \"“@#$%”\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14687012368
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 107830435
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-validity-of-search-results-on-google;test-google-search-results",
+        "keyword": "Scenario Outline",
+        "line": 36,
+        "name": "Test google search results",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 81122
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "browser is up",
+            "match": {
+              "location": "test/steps/testGoogle.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74278
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I visit google site",
+            "match": {
+              "location": "test/steps/testGoogle.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6645396745
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I search with \"automation test\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18814455
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see result with \"automation test\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15415909323
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 105560214
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "test-validity-of-search-results-on-google",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Test validity of search results on google",
+    "tags": [],
+    "uri": "test/features/testGoogle.feature"
+  }
+]

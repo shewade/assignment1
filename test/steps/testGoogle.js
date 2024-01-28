@@ -25,7 +25,7 @@ When('I visit google site', function (callback) {
 
 Then('Title should be Google', function (callback) {
   this.driver.getTitle().then(function (actualTitle) {
-    console.log("actual title is", actualTitle)
+    if (process.env.CUCUMBER_DEBUG) console.log("actual title is", actualTitle)
     assert(actualTitle, " Google")
     return callback()
   });
@@ -34,7 +34,7 @@ Then('Title should be Google', function (callback) {
 
 When('I search with {string}', function (searchStr, callback) {
   // Write code here that turns the phrase above into concrete actions
-  console.log(searchStr)
+  if (process.env.CUCUMBER_DEBUG) console.log(searchStr)
   googlepage.enter_search_text(searchStr).then(function () {
     callback()
   })

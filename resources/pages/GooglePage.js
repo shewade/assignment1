@@ -33,23 +33,20 @@ class GooglePage extends BasePage {
             var str = stext.split(" ")
             // for now match only first word
 
-            console.log(firstResultText)
+            //console.log(firstResultText)
 
             if (firstResultText.toLowerCase().includes(str[0].toLowerCase())) {
                 assert.equal(true, true);
-                console.log(" second word is present in  search result")
             } else {
                 // first word is not matching, match second word
                 if (firstResultText.toLowerCase().includes(str[1].toLowerCase())) {
                     assert.equal(true, true);
-                    console.log(" second word is present in  search result")
                 }
                 else {
                     // if both first and second words are not present, fail the test
-                    await this.driver.sleep(10000)
+                    //await this.driver.sleep(10000)
                     console.log(" expected : ", str[0], str[1])
                     console.log(firstResultText)
-
                     assert.equal(true, false)
                     console.log(" Test failed.")
                 }
