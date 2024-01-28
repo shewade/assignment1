@@ -6,7 +6,7 @@ const assert = require('assert');
 
 
 
-class HomePage extends BasePage {
+class GooglePage extends BasePage {
     async enter_url(theURL) {
         await this.go_to_url(theURL);
     }
@@ -67,4 +67,4 @@ class HomePage extends BasePage {
 
 
 }
-module.exports = HomePage;
+module.exports = GooglePage;

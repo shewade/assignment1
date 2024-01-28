@@ -1,7 +1,7 @@
 const importCwd = require('import-cwd')
 const { Given, When, Then } = importCwd('@cucumber/cucumber')
 const assert = require('assert');
-const HomePage = require('../../resources/pages/HomePage');
+const GooglePage = require('../../resources/pages/GooglePage');
 
 var { setDefaultTimeout } = require('@cucumber/cucumber');
 
@@ -15,7 +15,7 @@ Given('browser is up', async function () {
 
 When('I visit google site', function (callback) {
   var baseurl = 'https://www.google.com/';
-  googlepage = new HomePage(this.driver);
+  googlepage = new GooglePage(this.driver);
   googlepage.enter_url(baseurl).then(function () {
     return callback()
   })
