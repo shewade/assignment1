@@ -1,0 +1,23 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    
+    "test":   "./node_modules/.bin/cucumber-js -p default -p html_report ",
+    "oldtest" : "./node_modules/.bin/cucumber-js ./test/features  -f json:./report/cucumber_report.json --require ./test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chromedriver": "^121.0.0",
+    "cucumber": "^6.0.7",
+    "cucumber-html-reporter": "^7.1.1",
+    "selenium-webdriver": "^4.17.0"
+  },
+  "dependencies": {
+    "import-cwd": "^3.0.0"
+  }
+}

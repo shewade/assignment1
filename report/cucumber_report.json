@@ -1,0 +1,158 @@
+[
+  {
+    "description": "    Test google search results for validity",
+    "elements": [
+      {
+        "description": "",
+        "id": "test-validity-of-search-results-on-google;visit-google-search-page",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Visit google search page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 338696
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "browser is up",
+            "match": {
+              "location": "test/steps/testGoogle.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 245255
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I visit google site",
+            "match": {
+              "location": "test/steps/testGoogle.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6089244294
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Title should be Google",
+            "match": {
+              "location": "test/steps/testGoogle.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5857969
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 63113129
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-validity-of-search-results-on-google;test-google-search-results",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Test google search results",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 276515
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "browser is up",
+            "match": {
+              "location": "test/steps/testGoogle.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 110428
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I visit google site",
+            "match": {
+              "location": "test/steps/testGoogle.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5790582178
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I search with \"Friday\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16899627
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see result with \"Friday\"",
+            "match": {
+              "location": "test/steps/testGoogle.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20922606801
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 110284432
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "test-validity-of-search-results-on-google",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Test validity of search results on google",
+    "tags": [],
+    "uri": "test/features/testGoogle.feature"
+  }
+]
