@@ -5,19 +5,19 @@ const { Before, After, Status, BeforeAll, AfterAll } = importCwd('@cucumber/cucu
 const Report = require('./Report');
 
 BeforeAll(async function () {
-    if(process.env.CUCUMBER_DEBUG) console.log(" in BeforeAll Hook")
+    if (process.env.CUCUMBER_DEBUG) console.log(" in BeforeAll Hook")
     //console.log(process.env)
 
 });
 
 
 Before(async function () {
-    if(process.env.CUCUMBER_DEBUG) console.log(" in Before Hook")
+    if (process.env.CUCUMBER_DEBUG) console.log(" in Before Hook")
     // This hook will be executed before all scenarios
 });
 
-Before({tags: '@smoke'}, async function () {
-    if(process.env.CUCUMBER_DEBUG) console.log(" in Before Hook")
+Before({ tags: '@smoke' }, async function () {
+    if (process.env.CUCUMBER_DEBUG) console.log(" in Before Hook")
     // This hook will be executed before scenarios tagged with @smoke
 });
 
@@ -27,10 +27,10 @@ Before({tags: '@smoke'}, async function () {
 After(async function (scenario) {
     //console.log( "In after Hook : ", scenario)
 
-   if(process.env.CUCUMBER_DEBUG) console.log(" after Hook")
+    if (process.env.CUCUMBER_DEBUG) console.log(" after Hook")
 
     if (scenario.result.status === Status.FAILED) {
-        try{
+        try {
             const data = await this.driver.takeScreenshot();
             // Attaching screenshot to report
             await this.attach(data, 'image/png');
@@ -45,7 +45,7 @@ After(async function (scenario) {
 
 // at the end generate the report
 AfterAll(async function () {
-    if(process.env.CUCUMBER_DEBUG) console.log(" afterAll Hook")
+    if (process.env.CUCUMBER_DEBUG) console.log(" afterAll Hook")
     setTimeout(() => {
         Report.generate(); // Genetare HTML report
     }, 1000)

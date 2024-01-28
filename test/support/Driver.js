@@ -8,8 +8,8 @@ class Driver {
      * Abstract
      */
     constructor() {
-        if( new.target == Driver ) {
-          throw new Error("Driver can't be instantiated directly.")
+        if (new.target == Driver) {
+            throw new Error("Driver can't be instantiated directly.")
         }
     }
 
@@ -18,13 +18,13 @@ class Driver {
      * @param {String} name - name
      */
     static create(name) {
-        if(name == "chrome"){
+        if (name == "chrome") {
             try {
                 const className = require('./ChromeDriver');
                 return new className();
-            } 
+            }
             catch (error) {
-                throw new Error(className+' driver not found');
+                throw new Error(className + ' driver not found');
             }
         }
         // add support for other browsers
@@ -35,7 +35,7 @@ class Driver {
      * Build the driver with capabilities 
      * @returns {WebDriver} Driver object
      */
-    build() {}
+    build() { }
 }
 
 module.exports = Driver;

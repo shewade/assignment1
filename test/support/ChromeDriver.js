@@ -19,15 +19,15 @@ class ChromeDriver extends Driver {
      */
     build() {
         return new webdriver.Builder()
-                .withCapabilities({
-                    browserName: 'chrome',
-                    javascriptEnabled: true,
-                    acceptSslCerts: true,
-                    chromeOptions: {
-                        args: ['start-maximized', 'disable-extensions']
+            .withCapabilities({
+                browserName: 'chrome',
+                javascriptEnabled: true,
+                acceptSslCerts: true,
+                chromeOptions: {
+                    args: ['start-maximized', 'disable-extensions']
                 },
                 path: chromedriver.path
-                }).build();
+            }).build();
     }
 }
 

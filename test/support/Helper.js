@@ -12,7 +12,7 @@ class Helper {
     constructor(world) {
         this.world = world;
 
-        if(process.env.CUCUMBER_DEBUG) console.log('Screenshot:constructor');
+        if (process.env.CUCUMBER_DEBUG) console.log('Screenshot:constructor');
     }
 
     /**
@@ -47,8 +47,8 @@ class Helper {
     async loadPage(url) {
         await this.world.driver.get(url);
 
-        if(process.env.CUCUMBER_DEBUG) console.log('loadPage: '+url);
-        
+        if (process.env.CUCUMBER_DEBUG) console.log('loadPage: ' + url);
+
         // now wait for the body element to be present
         await this.waitFor('body');
     }
@@ -74,11 +74,11 @@ class Helper {
     async findElementById(locator) {
 
         if (!this.world.isBrowser) {
-			throw new Error('Tests are not running on a web browser, no web elements to wait for');
+            throw new Error('Tests are not running on a web browser, no web elements to wait for');
         }
-        
 
-        if(process.env.CUCUMBER_DEBUG) console.log('findElementById: '+locator);
+
+        if (process.env.CUCUMBER_DEBUG) console.log('findElementById: ' + locator);
 
         return this.world.driver.findElement(this.world.webdriver.By.id(locator));
     }
@@ -101,7 +101,7 @@ class Helper {
      *      helper.refresh();
      */
     async refresh() {
-        if(this.world.debug) console.log('refresh');
+        if (this.world.debug) console.log('refresh');
 
         await this.world.driver.navigate().refresh();
         await this.world.sleep(2000);
