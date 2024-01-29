@@ -14,9 +14,9 @@ Given('browser is up', async function () {
 
 
 When('I visit google site', function (callback) {
-  var baseurl = 'https://www.google.com/';
-  googlepage = new GooglePage(this.driver);
-  googlepage.enter_url(baseurl).then(function () {
+    var baseurl = 'https://www.google.com/';
+    googlepage = new GooglePage(this.driver);
+    googlepage.enterUrl(baseurl).then(function () {
     return callback()
   })
 
@@ -35,7 +35,8 @@ Then('Title should be Google', function (callback) {
 When('I search with {string}', function (searchStr, callback) {
   // Write code here that turns the phrase above into concrete actions
   if (process.env.CUCUMBER_DEBUG) console.log(searchStr)
-  googlepage.enter_search_text(searchStr).then(function () {
+
+  googlepage.enterSearchText(searchStr).then(function () {
     callback()
   })
 });
@@ -44,7 +45,8 @@ When('I search with {string}', function (searchStr, callback) {
 Then('I should see result with {string}', function (searchStr, callback) {
   // Write code here that turns the phrase above into concrete actions
   console.log(searchStr)
-  googlepage.verify_search_result(searchStr).then(function () {
+  googlepage.verifySearchResult(searchStr).then(function ( result) {
+     assert.equal(result, true)
     callback()
   })
 });

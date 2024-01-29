@@ -9,7 +9,7 @@ class BasePage {
         this.driver.manage().setTimeouts({ implicit: (10000) });
     }
 
-    async go_to_url(theURL) {
+    async goToUrl(theURL) {
         await this.driver.get(theURL);
     }
     async enterTextByCss(css, searchText) {
@@ -22,7 +22,7 @@ class BasePage {
         await this.driver.quit();
     }
 
-    async find_element_by_id(locator) {
+    async findElementById(locator) {
         if (process.env.CUCUMBER_DEBUG) console.log('findElementById: ' + locator);
         return this.driver.findElement(this.webdriver.By.id(locator));
     }
@@ -31,14 +31,17 @@ class BasePage {
      * Match the title
      * @param {string} expectedTitle - expected title to match
      */
-    async title_equals(expectedTitle) {
+    async titleEquals(expectedTitle) {
         if (process.env.CUCUMBER_DEBUG) console.log('titleEquals');
 
         const actualTitle = await this.world.driver.getTitle();
-        assert.equal(actualTitle, expectedTitle);
+        if(actualTitle ==  expectedTitle)
+            return true
+        else
+            return false
     }
 
-    async get_title() {
+    async getTitle() {
         if (process.env.CUCUMBER_DEBUG) console.log('titleEquals');
 
         return await this.driver.getTitle();
