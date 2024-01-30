@@ -6,16 +6,17 @@ const assert = require('assert');
 
 
 
-class GooglePage extends BasePage {
+class BingPage extends BasePage {
     async enterUrl(theURL) {
         await this.goToUrl(theURL);
     }
 
+    // when searching on bing page element is name = 'q'
     async enterSearchText(stext) {
         if (process.env.CUCUMBER_DEBUG) console.log(stext)
-        let el = await this.driver.findElement(By.id("APjFqb"));
+        let el = await this.driver.findElement(By.name('q'));
         await el.sendKeys(stext)
-        await el.submit()
+        el.submit()
     }
 
 
@@ -26,7 +27,7 @@ class GooglePage extends BasePage {
 
         try {
             // Find the first search result link
-            const firstResultLink = await this.driver.findElement(By.css('.tF2Cxc'));
+            const firstResultLink = await this.driver.findElement(By.css('.b_algo h2 a'));
 
             // Get text of the first result link
 
@@ -67,4 +68,4 @@ class GooglePage extends BasePage {
 
 
 }
-module.exports = GooglePage;
+module.exports = BingPage;

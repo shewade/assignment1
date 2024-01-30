@@ -10,6 +10,7 @@ class BasePage {
     }
 
     async goToUrl(theURL) {
+        console.log(" get the url :", theURL)
         await this.driver.get(theURL);
     }
     async enterTextByCss(css, searchText) {

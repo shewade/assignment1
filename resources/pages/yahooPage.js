@@ -6,14 +6,14 @@ const assert = require('assert');
 
 
 
-class GooglePage extends BasePage {
+class YahooPage extends BasePage {
     async enterUrl(theURL) {
         await this.goToUrl(theURL);
     }
 
     async enterSearchText(stext) {
         if (process.env.CUCUMBER_DEBUG) console.log(stext)
-        let el = await this.driver.findElement(By.id("APjFqb"));
+        let el = await this.driver.findElement(By.name("p"));
         await el.sendKeys(stext)
         await el.submit()
     }
@@ -21,12 +21,14 @@ class GooglePage extends BasePage {
 
     async verifySearchResult(stext) {
 
+         console.log("wait for search tab")
         // wait for search results to load
-        await this.driver.wait(until.titleContains(stext), 5000);
+        await this.driver.wait(until.elementsLocated(By.name('p')), 5000);
 
+        console.log("wait for search tab Done, now enter text")
         try {
             // Find the first search result link
-            const firstResultLink = await this.driver.findElement(By.css('.tF2Cxc'));
+            const firstResultLink = await this.driver.findElement(By.css('.compTitle h3 a'));
 
             // Get text of the first result link
 
@@ -67,4 +69,4 @@ class GooglePage extends BasePage {
 
 
 }
-module.exports = GooglePage;
+module.exports = YahooPage;

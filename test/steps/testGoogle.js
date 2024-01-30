@@ -1,10 +1,11 @@
 const importCwd = require('import-cwd')
 const { Given, When, Then } = importCwd('@cucumber/cucumber')
 const assert = require('assert');
-const GooglePage = require('../../resources/pages/GooglePage');
+const GooglePage = require('../../resources/pages/googlePage');
 
 var { setDefaultTimeout } = require('@cucumber/cucumber');
 
+/******* 
 setDefaultTimeout(60 * 1000);
 
 
@@ -15,8 +16,8 @@ Given('browser is up', async function () {
 
 When('I visit google site', function (callback) {
     var baseurl = 'https://www.google.com/';
-    googlepage = new GooglePage(this.driver);
-    googlepage.enterUrl(baseurl).then(function () {
+    this.page = new GooglePage(this.driver);
+    this.page.enterUrl(baseurl).then(function () {
     return callback()
   })
 
@@ -36,7 +37,7 @@ When('I search with {string}', function (searchStr, callback) {
   // Write code here that turns the phrase above into concrete actions
   if (process.env.CUCUMBER_DEBUG) console.log(searchStr)
 
-  googlepage.enterSearchText(searchStr).then(function () {
+   this.page.enterSearchText(searchStr).then(function () {
     callback()
   })
 });
@@ -45,9 +46,11 @@ When('I search with {string}', function (searchStr, callback) {
 Then('I should see result with {string}', function (searchStr, callback) {
   // Write code here that turns the phrase above into concrete actions
   console.log(searchStr)
-  googlepage.verifySearchResult(searchStr).then(function ( result) {
+   this.page.verifySearchResult(searchStr).then(function ( result) {
      assert.equal(result, true)
     callback()
   })
 });
+
+************/
 

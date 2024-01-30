@@ -1,0 +1,265 @@
+[
+  {
+    "description": "    Test  search results for validity",
+    "elements": [
+      {
+        "description": "",
+        "id": "test-validity-of-search-results-on-multiple-search-engines;test--search-results",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Test  search results",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 364683
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "browser is up",
+            "match": {
+              "location": "test/steps/testMultipleSearchEngines.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 261476
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I visit \"google\" site",
+            "match": {
+              "location": "test/steps/testMultipleSearchEngines.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4052257723
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I search with \"Friday\"",
+            "match": {
+              "location": "test/steps/testMultipleSearchEngines.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1091055241
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see result with \"Friday\"",
+            "match": {
+              "location": "test/steps/testMultipleSearchEngines.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4341081295
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 158237754
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@all",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-validity-of-search-results-on-multiple-search-engines;test--search-results",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Test  search results",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 138636
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "browser is up",
+            "match": {
+              "location": "test/steps/testMultipleSearchEngines.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 542855
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I visit \"bing\" site",
+            "match": {
+              "location": "test/steps/testMultipleSearchEngines.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3049158769
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I search with \"Friday\"",
+            "match": {
+              "location": "test/steps/testMultipleSearchEngines.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 115163853
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see result with \"Friday\"",
+            "match": {
+              "location": "test/steps/testMultipleSearchEngines.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1514689293
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 110119816
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@all",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-validity-of-search-results-on-multiple-search-engines;test--search-results",
+        "keyword": "Scenario Outline",
+        "line": 15,
+        "name": "Test  search results",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 105659
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "browser is up",
+            "match": {
+              "location": "test/steps/testMultipleSearchEngines.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 243248
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I visit \"yahoo\" site",
+            "match": {
+              "location": "test/steps/testMultipleSearchEngines.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3481151234
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I search with \"Friday\"",
+            "match": {
+              "location": "test/steps/testMultipleSearchEngines.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2263105278
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see result with \"Friday\"",
+            "match": {
+              "location": "test/steps/testMultipleSearchEngines.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45382743
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 116131754
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@all",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "test-validity-of-search-results-on-multiple-search-engines",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Test validity of search results on multiple search engines",
+    "tags": [],
+    "uri": "test/features/testMultipleSearchEngines.feature"
+  }
+]
